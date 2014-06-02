@@ -1,4 +1,4 @@
-package stackoverflow.java8mongo;
+package stackoverflow.java8mongo.domain;
 
 import java.time.Instant;
 
