@@ -6,11 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.context.annotation.ComponentScan;
 
 import stackoverflow.java8mongo.domain.Token;
 import stackoverflow.java8mongo.repository.TokenRepository;
 
 @EnableAutoConfiguration
+@ComponentScan(basePackages = "stackoverflow.java8mongo")
 public class Application implements CommandLineRunner {
 	
 	@Autowired
